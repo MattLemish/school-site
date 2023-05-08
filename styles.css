@@ -3,6 +3,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Raleway', sans-serif;
+    overflow: hidden;
 
 }
 
@@ -74,7 +75,6 @@ button {
 .header__links ul {
     display: flex;
     gap: 40px;
-    font-weight: 400;
     font-size: 24px;
 }
 
@@ -84,9 +84,10 @@ button {
     gap: 14px;
     cursor: pointer;
     transition: all 200ms ease-in-out;
+    font-weight: lighter;
 }
 
-.header__links li:hover{
+.header__links li:hover {
     transform: scale(0.9);
 }
 
@@ -134,7 +135,36 @@ button {
     border-radius: 30px;
 }
 
-.second__block{
+.text__inner__one {
+    margin-top: 10px;
+    width: 603px;
+    margin-left: 33px;
+    font-weight: bold;
+    font-size: 90px;
+}
+
+.school__name h1 {
+    background: linear-gradient(90deg, #EBEBEB 63.52%, rgba(235, 235, 235, 0) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.school__number h1 {
+    background: linear-gradient(155.38deg, #FFFFFF 42.33%, rgba(255, 255, 255, 0) 70.93%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 800;
+    font-size: 500px;
+    position: absolute;
+    left: 10px;
+    bottom: -65px;
+}
+
+
+
+.second__block {
     background: #EBEBEB;
     position: absolute;
     right: 0;
@@ -142,4 +172,21 @@ button {
     top: 0;
     height: 100%;
     width: 800px;
+}
+
+.second__block img {
+    margin-left: -257px;
+}
+
+.text__inner__two{
+    position: absolute;
+    top: 45px;
+    width: 500px;
+    left: 260px;
+    font-size: 24px;
+}
+
+.text__inner__two p{
+    margin-top: 45px;
+    font-size: 24px;
 }
