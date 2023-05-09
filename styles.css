@@ -264,10 +264,7 @@ button {
     font-size: 36px;
 }
 
-.animated {
-    opacity: 1;
-    transform: translateY(0);
-}
+
 
 
 
@@ -275,7 +272,27 @@ button {
 /*--section three--*/
 
 .section__three {
-    height: 100vh;
+    height: 150vh;
+    width: 100%;
+    background-color: #18181B;
+    padding-top: 100px;
+}
+
+.section__three__slogan{
+    background-color: #18181B;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: 800;
+    font-size: 150px;
+    height: 176px;
+    transform: translateY(200%);
+    opacity: 0;
+    transition: all 1000ms ease-out;
+
+}
+
+.section__three__slider {
+    height: 120vh;
     width: 100%;
     background-color: #18181B;
     display: flex;
@@ -284,86 +301,53 @@ button {
 }
 
 
-/*--slider--*/
-
-
-
-/* Слайдер */
-.slick-slider{}
-/* Слайдер запущен */
-.slick-slider.slick-initialized{}
-/* Слайдер с точками */
-.slick-slider.slick-dotted{}
-/* Ограничивающая оболочка */
+/*--slider
+Ограничивающая оболочка */
 .slick-list {
     overflow: hidden;
 }
+
 /* Лента слайдов */
-.slick-track{
+.slick-track {
     display: flex;
 }
-/* Слайд */
-.slick-slide{}
-/* Слайд активный (показывается) */
-.slick-slide.slick-active{}
-/* Слайд основной */
-.slick-slide.slick-current{}
-/* Слайд по центру */
-.slick-slide.slick-center{}
-/* Клонированный слайд */
-.slick-slide.slick-cloned{}
-/* Стрелка */
-.slick-arrow{}
-/* Стрелка влево */
-.slick-arrow.slick-prev{}
-/* Стрелка вправо */
-.slick-arrow.slick-next{}
-/* Стрелка не активная */
-.slick-arrow.slick-disabled{}
-/* Точки (булиты) */
-.slick-dots{}
-.slick-dots li{}
-/* Активная точка */
-.slick-dots li.slick-active{}
-/* Элемент точки */
-.slick-dots li button{}
 
 
 /*--Конкретный слайдер--*/
 
-.slider{
+.slider {
     min-width: 0;
-    padding: 0 40px;
+    padding: 0 220px;
     position: relative;
     overflow: hidden;
-    
-    
+
+
 }
 
 
-.slider .slick-arrow{
+.slider .slick-arrow {
     position: absolute;
     color: #4363E8;
     z-index: 13;
     font-size: 0;
     width: 30px;
     height: 60px;
-    background-color: aqua;
     top: 50%;
-    
+
 }
 
-.slider .slick-arrow.slick-next{
-    background: url(photos/icone2.png);
+.slider .slick-arrow.slick-next {
+    background: url(photos/arrows/Vector.png);
     background-position: center;
     background-size: cover;
-    right: 40px;
+    right: 120px;
 }
-.slider .slick-arrow.slick-arrow.slick-prev{
-    background: url(photos/icone1.png);
+
+.slider .slick-arrow.slick-arrow.slick-prev {
+    background: url(photos/arrows/Vector\ \(1\).png);
     background-position: center;
     background-size: cover;
-    left: 40px;
+    left: 120px;
 }
 
 
@@ -442,4 +426,22 @@ button {
     width: 225px;
     font-size: 36px;
     color: #FFFFFF;
+}
+
+.footer__text__inner__two {
+    position: absolute;
+    width: 218px;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 42px;
+    color: #FFFFFF;
+    bottom: 0%;
+    right: 12%;
+}
+
+/*--animated--*/
+
+.animated {
+    opacity: 1;
+    transform: translateY(0);
 }
